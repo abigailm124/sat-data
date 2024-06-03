@@ -34,4 +34,11 @@ public class Main {
     System.out.println("average: " + average);
   }
 
+  int lowest = 0; // > 600
+  int low = 0; //600-800
+  int ave = 0; // 800-1000
+  int higher = 0; //1100-1300;
+  int highest = 0; //1400-1600;
+  
+
 }
