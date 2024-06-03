@@ -39,6 +39,20 @@ public class Main {
   int ave = 0; // 800-1000
   int higher = 0; //1100-1300;
   int highest = 0; //1400-1600;
-  
+
+  for(int score : totalScore){
+    if(score < 600){
+      lowest ++;
+    } else if (score < 800){
+      low++;
+    } else if (score < 1100){
+      ave ++;
+    } else if (score < 1300){
+      higher ++;
+    } else if (score <= 1600){
+      highest ++;
+    }
+  }
+
 
 }
