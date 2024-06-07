@@ -24,14 +24,14 @@ public class Main {
 
     // make sure all data entered the ArrayList
     //System.out.println(totalScore);
-    System.out.println(totalScore.size());
+    //System.out.println(totalScore.size());
 
     double total = 0;
     for(int score : totalScore){
       total+= score;
     }
     double average = total / totalScore.size();
-    System.out.println("average: " + average);
+    System.out.println("Average: " + average);
   
 
   int lowest = 0; // > 600
@@ -58,6 +58,6 @@ public class Main {
     }
   }
 
-System.out.println("Scores:\nBelow 600: " + lowest + "\n600-800: "+low+"\n800-1000: " + ave + "\n1400-1599: " + highest + "\nPerfect Score: " + perfect);
+System.out.println("\nScores:\nBelow 600: " + lowest + "\n600-800: "+low+"\n800-1000: " + ave + "\n1000-1300: " +higher + "\n1300-1599: " + highest + "\nPerfect Score: " + perfect);
   }
 }
