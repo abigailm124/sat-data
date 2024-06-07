@@ -32,13 +32,15 @@ public class Main {
     }
     double average = total / totalScore.size();
     System.out.println("average: " + average);
-  }
+  
 
   int lowest = 0; // > 600
   int low = 0; //600-800
   int ave = 0; // 800-1000
   int higher = 0; //1100-1300;
-  int highest = 0; //1400-1600;
+  int highest = 0; //1400-1599;
+  int perfect = 0; //1600
+  
 
   for(int score : totalScore){
     if(score < 600){
@@ -51,8 +53,11 @@ public class Main {
       higher ++;
     } else if (score <= 1600){
       highest ++;
+    } else if (score == 1600){
+      perfect ++;
     }
   }
 
-
+System.out.println("Scores:\nBelow 600: " + lowest + "\n600-800: "+low+"\n800-1000: " + ave + "\n1400-1599: " + highest + "\nPerfect Score: " + perfect);
+  }
 }
