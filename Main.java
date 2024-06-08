@@ -58,6 +58,19 @@ public class Main {
     }
   }
 
-System.out.println("\nScores:\nBelow 600: " + lowest + "\n600-800: "+low+"\n800-1000: " + ave + "\n1000-1300: " +higher + "\n1300-1599: " + highest + "\nPerfect Score: " + perfect);
+System.out.println("\nScores:\nBelow 600: " + lowest + "\n600-799: "+low+"\n800-999: " + ave + "\n1000-1299: " +higher + "\n1300-1599: " + highest + "\nPerfect Score: " + perfect);
+
+  int min = 10000;
+  int max = 0;
+
+    for(int i : totalScore){
+      if (i < min){
+        min = i;
+      }
+      if(i > max){
+        max = i;
+      }
+      }
+    System.out.println("\nLowest Score: "+min+"\nHighest Score: "+max);
   }
 }
